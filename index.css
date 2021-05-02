@@ -1,0 +1,155 @@
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background-color:#2c3e50;
+}
+
+.btn{
+    cursor: pointer;
+}
+body{
+    color:white;
+}
+
+/* 중앙에 놓기 */
+
+.center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.center .name__input {
+    appearance: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 36px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+.center .name__input input::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.center .to-do input::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+  
+.center .name__input:focus,
+.center .name__input:active {
+    outline: none;
+}
+  
+.center .name__text {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* 시계창 */
+
+.clock{
+    font-size: 4em;
+    margin: -0.5em;
+}
+
+.date{
+    font-size: 1.3em;
+    margin-top: 1em;
+}
+
+.location {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in;
+    font-style: italic;
+    font-size: 12px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+  
+.location:hover {
+    opacity: 1;
+}
+
+/* 입력창 */
+
+input {
+    background: none;
+    appearance: none;
+    border: 0;
+    font-size: 22px;
+    color: white;
+    border-bottom: 2px solid white;
+  }
+
+.clicked{
+    color: #7f8c8d;
+}
+
+/* 제출창 */
+
+.form,
+.greetings{
+    display: none;
+}
+
+.showing{
+    display: block;
+    font-size:1.3em;
+}
+
+/* 리스트 */
+
+.list {
+    margin-bottom: 20px;
+}
+
+.toDo {
+    font-size: 22px;
+}
+
+/* 날씨 */
+
+.js-weather {
+    position: absolute;
+    font-style: bold;
+    font-size: 0.9em;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+/* 배경이미지 */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1; /* 맨 뒤로 */
+    animation: fadeIn 0.5s linear;
+}
+
+/* 스타일 */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
